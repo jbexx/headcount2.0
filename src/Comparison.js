@@ -1,13 +1,15 @@
 import React from "react";
 import SchoolCard from "./SchoolCard";
 import CompareCard from "./CompareCard";
+import './Comparison.css'
 
-const Comparison = ({ cardData, findAverage, clickedCard, districtRatio }) => {
+const Comparison = ({ cardData, cardClass, findAverage, clickedCard, districtRatio }) => {
   // console.log(cardData);
 
   const schoolCards = cardData.map((school, i) =>
     <SchoolCard
       data={school}
+      cardClass={cardClass}
       key={i}
       findAverage={findAverage}
       clickedCard={clickedCard}

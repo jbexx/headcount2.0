@@ -2,15 +2,11 @@ import React from "react";
 import "./SchoolCard.css";
 import { object, func } from "prop-types";
 
-const SchoolCard = ({ data, findAverage, clickedCard }) => {
+const SchoolCard = ({ data, cardClass, findAverage, clickedCard }) => {
   const { Location, Data } = data;
-
   const yearsKeys = Object.keys(Data);
-
   const average = findAverage(Location);
-
   let divClass = average < 0.5 ? "low-average" : "";
-
   const listItems = yearsKeys.map((year, i) => {
     const colorClass = Data[year] < 0.5 ? "below-five" : "";
     data.Average = average;
@@ -29,7 +25,7 @@ const SchoolCard = ({ data, findAverage, clickedCard }) => {
 
   return (
     <div
-      className={`${divClass} school-card`}
+      className={`${cardClass} ${divClass}`}
       onClick={e => clickedCard(e.currentTarget, data)}
     >
       <h3 className="school-name">

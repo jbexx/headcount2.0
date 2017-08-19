@@ -54,19 +54,21 @@ class App extends Component {
   }
 
   render() {
-    const data = this.state.data;
+    const { data } = this.state;
     return (
       <div>
         <Search findSchool={this.updateData.bind(this)} />
 
         <SchoolList
           data={data}
+          cardClass={'school-card'}
           findAverage={districtInfo.findAverage.bind(districtInfo)}
           clickedCard={this.clickedCard.bind(this)}
         />
 
         <Comparison
           cardData={this.state.compareCards}
+          cardClass={'school-compare'}
           findAverage={districtInfo.findAverage.bind(districtInfo)}
           clickedCard={this.clickedCard.bind(this)}
           districtRatio={districtInfo.compareDistrictAverages.bind(

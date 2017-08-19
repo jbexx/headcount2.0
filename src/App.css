@@ -2,3 +2,13 @@
 body {
   background-color: #222;
 }
+
+.data-reactroot {
+  display: flex;
+  flex-direction: row;
+  font-family: sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
