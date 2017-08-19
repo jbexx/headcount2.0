@@ -1,0 +1,13 @@
+.search {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  width: 41%;
+}
+
+.search-bar {
+  font-size: 1.3em;
+  text-align: center;
+  height: 30px;
+  width: 250px;
+}

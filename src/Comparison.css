@@ -1,9 +1,11 @@
 .compare-cards {
-  align-items: center;
+  font-family: 'Bungee', cursive;
+  align-items: flex-start;
   display: flex;
-  float: left;
-  justify-content: flex-end;
-  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 70vh;
   margin: 0;
-  width: 70%;
+  margin-top: -50px;
+  width: 55%;
 }
