@@ -1,33 +1,24 @@
-/*.all-cards {
-  width: 25%;
-}*/
-
-.compare-cards {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-}
-
-.school-card {
+.school-card, .school-compare {
   background-color: #00b2ab;
-  display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: center;
   border: 5px solid #000;
   border-radius: 10px;
   height: 350px;
+  cursor: pointer;
+  text-align: center;
   width: 250px;
+}
+
+.school-compare {
+  
+}
+
+ul {
+  margin: 10px auto;
 }
 
 .clicked-card {
   border: 5px solid #98fffe;
-}
-
-.school-name {
-}
-
-.average {
 }
 
 .year-percentages {

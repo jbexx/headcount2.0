@@ -2,15 +2,11 @@ import React from "react";
 import "./CompareCard.css";
 
 const CompareCard = ({ cardData, districtRatio }) => {
-  console.log(cardData);
   if (cardData.length === 2) {
     const { Location, Average } = cardData[0];
-    // const { Location2, Average2 } = cardData[1];
-
     const Location2 = cardData[1].Location;
     const Average2 = cardData[1].Average;
     const ratio = districtRatio(Average, Average2);
-    console.log(ratio);
 
     return (
       <div className="compare-card">
