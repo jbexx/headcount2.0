@@ -4,11 +4,10 @@
   display: flex;
   flex-wrap: wrap;
   float: left;
-  height: 65vh;
+  height: 95vh;
   margin: 0;
   overflow-y: auto;
-  /* width: 580px; */
-  width: 43%;
+  width: 46%;
 }
 
 .all-cards::-webkit-scrollbar {

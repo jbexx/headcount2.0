@@ -3,7 +3,6 @@
   background-color: #00b2ab;
   border-radius: 10px;
   cursor: pointer;
-  flex-direction: column;
   margin: 15px;
   text-align: center;
   height: 350px;
@@ -16,6 +15,10 @@
 
 .school-compare {
   border: 5px solid #b94280;
+}
+
+.school-name {
+  font-size: 1.3em;
 }
 
 ul {
@@ -39,6 +42,14 @@ ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+.school-name {
+  margin: 5px 15px;
+}
+
+.average {
+  margin-top: 2px;
 }
 
 .data-point {

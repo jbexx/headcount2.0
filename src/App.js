@@ -34,6 +34,7 @@ class App extends Component {
     this.setState({
       compareCards: this.removeClickedCard(item, info)
     });
+
     item.classList.toggle("clicked-card");
   }
 
@@ -45,7 +46,7 @@ class App extends Component {
     } else if (compareCards[1] && info.Location === compareCards[1].Location) {
       return compareCards.splice(0, 1);
     } else if (compareCards.length === 2) {
-      item.classList.toggle("clicked-card");
+      // item.classList.toggle("clicked-card");
       return [...compareCards];
     } else {
       compareCards.push(info);
