@@ -1,23 +1,28 @@
 .all-cards {
-  font-family: 'Bungee', cursive;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   float: left;
-  height: 75vh;
+  font-family: 'Bungee', cursive;
+  height: 95vh;
+  width: 45%;
   justify-content: center;
   overflow-y: auto;
-  width: 40%;
 }
 
 .all-cards::-webkit-scrollbar {
   display: none;
 }
 
+@media (max-width: 1060px) {
+  .all-cards {
+    width: 40%;
+  }
+}
 
 @media (max-width: 900px) {
   .all-cards {
     order: 1;
-    width: 60%;
+    width: 100%;
   }
 }

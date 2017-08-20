@@ -16,7 +16,7 @@
 }
 
 .school-card:hover {
-  border: 7px outset  #98fffe;
+  border: 7px outset #98fffe;
   transition: border 500ms;
 }
 
@@ -28,12 +28,20 @@
   animation-name: drop-card;
   animation-duration: 2s;
   border: 7px solid #b94280;
+  margin-top: 30px;
   position: relative;
+  z-index: 1;
 }
 
 @keyframes drop-card {
-    0%   { top:-500px; z-index: -100}
-    100% { top: 0; z-index: -100}
+  0% {
+    top: -500px;
+    z-index: -100;
+  }
+  100% {
+    top: 0;
+    z-index: -100;
+  }
 }
 
 .school-name {
