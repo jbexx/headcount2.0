@@ -4,12 +4,20 @@
   display: flex;
   flex-wrap: wrap;
   float: left;
-  height: 95vh;
-  margin: 0;
+  height: 75vh;
+  justify-content: center;
   overflow-y: auto;
-  width: 46%;
+  width: 40%;
 }
 
 .all-cards::-webkit-scrollbar {
   display: none;
+}
+
+
+@media (max-width: 900px) {
+  .all-cards {
+    order: 1;
+    width: 60%;
+  }
 }
