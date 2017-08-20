@@ -1,0 +1,45 @@
+header {
+  background-image: url(https://tutina.ru/wp-content/uploads/2017/01/deti-ostanovka.gif);
+  background-position: 50% 90%;
+  background-size: cover;
+  color: #b94280;
+  display: flex;
+  align-items: center;
+  font-family: 'Monoton', cursive;
+  font-size: 2em;
+  justify-content: center;
+  height: 28vh;
+  width: 100%;
+  z-index: 2;
+}
+
+body {
+  background-color: #222;
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  #root > [data-reactroot] {
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 680px) {
+  header {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 560px) {
+  header {
+    font-size: 1em;
+  }
+}

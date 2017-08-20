@@ -1,9 +1,51 @@
 .compare-cards {
-  align-items: center;
+  align-items: flex-start;
+  /* border: 3px double yellow; */
+  background-color: rgba(80, 80, 80, 0.47);
   display: flex;
-  float: left;
-  justify-content: flex-end;
-  height: 100vh;
+  flex-wrap: wrap;
+  font-family: 'Bungee', cursive;
+  height: auto;
+  width: 40%;
+  justify-content: center;
   margin: 0;
-  width: 70%;
+  margin-left: 50%;
+  margin-top: -66px;
+  transition: ease 2s;
+  /* z-index: -1; */
+}
+
+@media (max-width: 1340px) {
+  .compare-cards {
+    margin-left: 40%;
+    width: 50%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .compare-cards {
+    width: 59%;
+  }
+}
+
+@media (max-width: 900px) {
+  .compare-cards {
+    height: auto;
+    margin: 0;
+    order: 3;
+    width: 80%;
+  }
+}
+
+@media (max-width: 680px) {
+  .compare-cards {
+    width: 98%;
+  }
+}
+
+@media (max-width: 560px) {
+  .compare-cards {
+    height: auto;
+    width: 85%;
+  }
 }

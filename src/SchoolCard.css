@@ -1,32 +1,64 @@
-.school-card, .school-compare {
+.school-card,
+.school-compare {
   background-color: #00b2ab;
-  flex-direction: column;
-  border: 5px solid #000;
-  border-radius: 10px;
-  height: 350px;
+  border-radius: 7px;
   cursor: pointer;
+  display: absolute;
+  margin: 15px 25px;
   text-align: center;
-  width: 250px;
+  height: 350px;
+  width: 200px;
+}
+
+.school-card {
+  border: 7px outset #000;
+  transition: 500ms;
+}
+
+.school-card:hover {
+  border: 7px outset #98fffe;
+  transition: border 500ms;
+}
+
+.school-card:active {
+  border: 7px inset #98fffe;
 }
 
 .school-compare {
-  
+  animation-name: drop-card;
+  animation-duration: 2s;
+  border: 7px solid #b94280;
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
 }
 
-ul {
-  margin: 10px auto;
+@keyframes drop-card {
+  0% {
+    top: -500px;
+    z-index: -100;
+  }
+  100% {
+    top: 0;
+    z-index: -100;
+  }
+}
+
+.school-name {
+  font-size: 1.3em;
 }
 
 .clicked-card {
-  border: 5px solid #98fffe;
+  border: 7px outset #98fffe;
 }
 
 .year-percentages {
   display: flex;
   flex-direction: column;
   list-style: none;
+  margin: 3px auto;
   padding: 0;
-  width: 50%;
+  width: 65%;
 }
 
 .year-data {
@@ -34,6 +66,18 @@ ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+.school-name {
+  margin: 5px 15px;
+}
+
+.average {
+  margin-top: 2px;
+}
+
+.data-point {
+  margin: 2px 0;
 }
 
 .below-five {

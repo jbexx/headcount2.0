@@ -1,0 +1,29 @@
+.search {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  width: 45%;
+}
+
+.search-bar {
+  font-size: 1.3em;
+  height: 30px;
+  width: 250px;
+  text-align: center;
+}
+
+.search-bar:focus {
+  outline: none;
+}
+
+@media (max-width: 1060px) {
+  .search {
+    width: 40%;
+  }
+}
+
+@media (max-width: 900px) {
+  .search {
+    order: 2;
+  }
+}
