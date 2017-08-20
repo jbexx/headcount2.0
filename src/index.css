@@ -10,13 +10,14 @@ header {
   justify-content: center;
   height: 28vh;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 body {
   background-color: #222;
   height: 100vh;
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -30,7 +31,6 @@ h1 {
     flex-direction: column-reverse;
   }
 }
-
 
 @media (max-width: 680px) {
   header {

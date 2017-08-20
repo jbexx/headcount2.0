@@ -17,7 +17,7 @@ const CompareCard = ({ cardData, districtRatio }) => {
           {Average}
         </h4>
         <h4 className="ratio">
-          {ratio}
+          ratio: <span>{ratio}</span>
         </h4>
         <h3>
           {Location2}

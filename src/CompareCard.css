@@ -12,16 +12,19 @@
   border-radius: 5px;
   font-family: 'Bungee', cursive;
   margin: 10px;
+  margin-bottom: 30px;
   text-align: center;
   height: 280px;
-  /*transition: ease 2s;*/
   width: 200px;
-  z-index: -1;
 }
 
 @keyframes comparison {
-    0%   { margin-top: 2000px}
-    100% { margin-top: 10px}
+  0% {
+    margin-top: 2000px;
+  }
+  100% {
+    margin-top: 10px;
+  }
 }
 
 h3 {
@@ -30,6 +33,7 @@ h3 {
 
 h4 {
   margin: 5px;
+  vertical-align: center;
 }
 
 .ratio {
