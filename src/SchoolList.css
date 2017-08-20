@@ -1,14 +1,15 @@
 .all-cards {
+  font-family: 'Bungee', cursive;
   align-items: center;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   float: left;
-  height: 100vh;
+  height: 95vh;
   margin: 0;
   overflow-y: auto;
-  width: 30%;
+  width: 46%;
 }
 
 .all-cards::-webkit-scrollbar {
-  display: none
+  display: none;
 }

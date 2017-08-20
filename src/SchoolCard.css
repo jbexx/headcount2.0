@@ -1,16 +1,24 @@
-.school-card, .school-compare {
+.school-card,
+.school-compare {
   background-color: #00b2ab;
-  flex-direction: column;
-  border: 5px solid #000;
   border-radius: 10px;
-  height: 350px;
   cursor: pointer;
+  margin: 15px;
   text-align: center;
+  height: 350px;
   width: 250px;
 }
 
+.school-card {
+  border: 5px solid #000;
+}
+
 .school-compare {
-  
+  border: 5px solid #b94280;
+}
+
+.school-name {
+  font-size: 1.3em;
 }
 
 ul {
@@ -34,6 +42,18 @@ ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+.school-name {
+  margin: 5px 15px;
+}
+
+.average {
+  margin-top: 2px;
+}
+
+.data-point {
+  margin: 2px 0;
 }
 
 .below-five {

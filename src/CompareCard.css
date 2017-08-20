@@ -1,12 +1,27 @@
 .compare-card {
-  background-color: #ffe0d8;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: center;
+  align-content: center;
+  justify-content: space-around;
+  background-color: #ffe0d8;
   border: 5px solid #98fffe;
-  border-radius: 10px;
-  height: 350px;
-  order: 0;
+  border-radius: 5px;
+  font-family: 'Bungee', cursive;
+  margin: 10px;
+  text-align: center;
+  height: 280px;
   width: 250px;
+}
+
+h3 {
+  margin: 5px 15px;
+}
+
+h4 {
+  margin: 5px;
+}
+
+.ratio {
+  font-size: 1.5em;
+  margin: 30px 0;
 }
