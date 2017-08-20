@@ -10,8 +10,36 @@ header {
   justify-content: center;
   height: 28vh;
   width: 100%;
+  z-index: 1;
+}
+
+body {
+  background-color: #222;
+  height: 100vh;
+  margin: 0;
 }
 
 h1 {
   margin: 0;
+}
+
+@media (max-width: 900px) {
+  #root > [data-reactroot] {
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+
+@media (max-width: 680px) {
+  header {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 560px) {
+  header {
+    font-size: 1em;
+  }
 }

@@ -71,7 +71,7 @@ class App extends Component {
           cardData={this.state.compareCards}
           cardClass={"school-compare"}
           findAverage={districtInfo.findAverage.bind(districtInfo)}
-          clickedCard={this.clickedCard.bind(this)}
+          // clickedCard={this.clickedCard.bind(this)}
           districtRatio={districtInfo.compareDistrictAverages.bind(
             districtInfo
           )}

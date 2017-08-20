@@ -1,40 +1,56 @@
 .school-card,
 .school-compare {
   background-color: #00b2ab;
-  border-radius: 10px;
+  border-radius: 7px;
   cursor: pointer;
-  margin: 15px;
+  display: absolute;
+  margin: 15px 25px;
   text-align: center;
   height: 350px;
-  width: 250px;
+  width: 200px;
 }
 
 .school-card {
-  border: 5px solid #000;
+  border: 7px outset #000;
+  transition: 500ms;
+}
+
+.school-card:hover {
+  border: 7px outset  #98fffe;
+  transition: border 500ms;
+}
+
+.school-card:active {
+  border: 7px inset #98fffe;
 }
 
 .school-compare {
-  border: 5px solid #b94280;
+  animation-name: drop-card;
+  animation-duration: 2s;
+  border: 7px solid #b94280;
+  position: relative;
+}
+
+@keyframes drop-card {
+    0%   { top:-500px; z-index: -100}
+    100% { top: 0; z-index: -100}
 }
 
 .school-name {
   font-size: 1.3em;
 }
 
-ul {
-  margin: 10px auto;
-}
-
 .clicked-card {
-  border: 5px solid #98fffe;
+  border: 7px outset #98fffe;
 }
 
 .year-percentages {
   display: flex;
   flex-direction: column;
   list-style: none;
+  margin: 3px auto;
   padding: 0;
-  width: 50%;
+  width: 65%;
 }
 
 .year-data {
