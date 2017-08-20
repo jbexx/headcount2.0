@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import App from "../../src/App";
 import Search from "../../src/Search";
 import SchoolList from "../../src/SchoolList";
-import SchoolCard from "../../src/SchoolCard";
 import Comparison from "../../src/Comparison";
 import { mount, shallow } from "enzyme";
 
