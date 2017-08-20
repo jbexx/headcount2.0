@@ -1,0 +1,14 @@
+.all-cards {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  height: 100vh;
+  margin: 0;
+  overflow-y: auto;
+  width: 30%;
+}
+
+.all-cards::-webkit-scrollbar {
+  display: none
+}

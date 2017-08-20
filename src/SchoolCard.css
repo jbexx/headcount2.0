@@ -1,0 +1,45 @@
+.school-card, .school-compare {
+  background-color: #00b2ab;
+  flex-direction: column;
+  border: 5px solid #000;
+  border-radius: 10px;
+  height: 350px;
+  cursor: pointer;
+  text-align: center;
+  width: 250px;
+}
+
+.school-compare {
+  
+}
+
+ul {
+  margin: 10px auto;
+}
+
+.clicked-card {
+  border: 5px solid #98fffe;
+}
+
+.year-percentages {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  width: 50%;
+}
+
+.year-data {
+  color: #222;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.below-five {
+  color: #ffe0d8;
+}
+
+.low-average {
+  background-color: #ff5900;
+}

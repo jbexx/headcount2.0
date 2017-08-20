@@ -1,0 +1,9 @@
+.compare-cards {
+  align-items: center;
+  display: flex;
+  float: left;
+  justify-content: flex-end;
+  height: 100vh;
+  margin: 0;
+  width: 70%;
+}
