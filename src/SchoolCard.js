@@ -1,6 +1,6 @@
 import React from "react";
 import "./SchoolCard.css";
-import { object, func } from "prop-types";
+import { object, func, string } from "prop-types";
 
 const SchoolCard = ({ data, cardClass, findAverage, clickedCard }) => {
   const { Location, Data } = data;
@@ -43,7 +43,9 @@ const SchoolCard = ({ data, cardClass, findAverage, clickedCard }) => {
 
 SchoolCard.propTypes = {
   data: object,
-  findAverage: func
+  findAverage: func,
+  cardClass: string,
+  clickedCard: func
 };
 
 export default SchoolCard;

@@ -1,5 +1,7 @@
 import React from "react";
 import "./CompareCard.css";
+import { array, func } from 'prop-types'
+
 
 const CompareCard = ({ cardData, districtRatio }) => {
   if (cardData.length === 2) {
@@ -32,3 +34,8 @@ const CompareCard = ({ cardData, districtRatio }) => {
 };
 
 export default CompareCard;
+
+CompareCard.propTypes = {
+  cardData: array,
+  districtRatio: func
+}

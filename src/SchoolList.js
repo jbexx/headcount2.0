@@ -1,13 +1,13 @@
 import React from 'react';
 import SchoolCard from './SchoolCard'
-import PropTypes, { object, array, func } from 'prop-types'
+import PropTypes, { object, array, func, string } from 'prop-types'
 import './SchoolList.css'
 
-const SchoolList = ({ data, cardClass, findAverage, clickedCard }) => {
-  const schools = Object.keys(data);
+const SchoolList = ({ cardData, cardClass, findAverage, clickedCard }) => {
+  const schools = Object.keys(cardData);
 
   const schoolCards =  schools.map((school, i) =>
-    <SchoolCard data={data[school]}
+    <SchoolCard data={cardData[school]}
                  key={i}
                  cardClass={cardClass}
          findAverage={findAverage}
@@ -25,7 +25,9 @@ SchoolList.propTypes = {
     object,
     array
   ]),
-  findAverage: func
+  cardClass: string,
+  findAverage: func,
+  clickedCard: func,
 }
 
 export default SchoolList

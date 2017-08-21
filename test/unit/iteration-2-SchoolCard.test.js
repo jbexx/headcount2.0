@@ -68,14 +68,17 @@ describe('School Card', () => {
   });
 
   it.skip('should render the correct average', () => {
+    wrapper = mount(<SchoolCard data={mockData} findAverage={mockFn} />)
+
     expect(wrapper.find('p.average').text()).toEqual("0.34");
   });
 
   it('should pass through the correct props', () => {
-    wrapper = mount(<SchoolCard data={mockData}
-                         findAverage={mockFn} />);
+    wrapper = mount(<SchoolCard data={mockData} findAverage={mockFn} />);
 
     expect(wrapper.props().data).toHaveProperty('Data', mockData.Data);
+    expect(wrapper.props().data).toHaveProperty('Location', mockData.Location)
+    expect(wrapper.props().data).toHaveProperty('Average', mockData.Average)
   });
 
 })
