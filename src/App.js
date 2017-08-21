@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./App.css";
-// import "normalize.css";
 import DistrictRepository from "./DistrictRepository";
 import SchoolList from "./SchoolList";
 import Search from "./Search";
@@ -61,7 +60,7 @@ class App extends Component {
         <Search findSchool={this.updateData.bind(this)} />
 
         <SchoolList
-          data={data}
+          cardData={data}
           cardClass={"school-card"}
           findAverage={districtInfo.findAverage.bind(districtInfo)}
           clickedCard={this.clickedCard.bind(this)}
@@ -71,9 +70,7 @@ class App extends Component {
           cardData={this.state.compareCards}
           cardClass={"school-compare"}
           findAverage={districtInfo.findAverage.bind(districtInfo)}
-          districtRatio={districtInfo.compareDistrictAverages.bind(
-            districtInfo
-          )}
+          districtRatio={districtInfo.compareDistrictAverages.bind(districtInfo)}
         />
       </div>
     );
